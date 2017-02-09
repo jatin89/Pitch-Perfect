@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91B6DE691E4D328B0047B1A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B6DE671E4D328B0047B1A2 /* Main.storyboard */; };
+		91B6DE6B1E4D363F0047B1A2 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6DE6A1E4D363F0047B1A2 /* PlaySoundsViewController.swift */; };
 		91CDD6A01E4C1E46004373A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CDD69F1E4C1E46004373A1 /* AppDelegate.swift */; };
-		91CDD6A21E4C1E46004373A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CDD6A11E4C1E46004373A1 /* ViewController.swift */; };
-		91CDD6A51E4C1E46004373A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CDD6A31E4C1E46004373A1 /* Main.storyboard */; };
+		91CDD6A21E4C1E46004373A1 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CDD6A11E4C1E46004373A1 /* RecordSoundsViewController.swift */; };
 		91CDD6A71E4C1E46004373A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CDD6A61E4C1E46004373A1 /* Assets.xcassets */; };
 		91CDD6AA1E4C1E46004373A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CDD6A81E4C1E46004373A1 /* LaunchScreen.storyboard */; };
 		91CDD6B51E4C1E46004373A1 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CDD6B41E4C1E46004373A1 /* Pitch_PerfectTests.swift */; };
@@ -34,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91B6DE681E4D328B0047B1A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91B6DE6A1E4D363F0047B1A2 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		91CDD69C1E4C1E46004373A1 /* Pitch-Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch-Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CDD69F1E4C1E46004373A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91CDD6A11E4C1E46004373A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		91CDD6A41E4C1E46004373A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91CDD6A11E4C1E46004373A1 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		91CDD6A61E4C1E46004373A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91CDD6A91E4C1E46004373A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91CDD6AB1E4C1E46004373A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,12 +99,13 @@
 		91CDD69E1E4C1E46004373A1 /* Pitch-Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				91B6DE671E4D328B0047B1A2 /* Main.storyboard */,
 				91CDD69F1E4C1E46004373A1 /* AppDelegate.swift */,
-				91CDD6A11E4C1E46004373A1 /* ViewController.swift */,
-				91CDD6A31E4C1E46004373A1 /* Main.storyboard */,
+				91CDD6A11E4C1E46004373A1 /* RecordSoundsViewController.swift */,
 				91CDD6A61E4C1E46004373A1 /* Assets.xcassets */,
 				91CDD6A81E4C1E46004373A1 /* LaunchScreen.storyboard */,
 				91CDD6AB1E4C1E46004373A1 /* Info.plist */,
+				91B6DE6A1E4D363F0047B1A2 /* PlaySoundsViewController.swift */,
 			);
 			path = "Pitch-Perfect";
 			sourceTree = "<group>";
@@ -232,9 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B6DE691E4D328B0047B1A2 /* Main.storyboard in Resources */,
 				91CDD6AA1E4C1E46004373A1 /* LaunchScreen.storyboard in Resources */,
 				91CDD6A71E4C1E46004373A1 /* Assets.xcassets in Resources */,
-				91CDD6A51E4C1E46004373A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91CDD6A21E4C1E46004373A1 /* ViewController.swift in Sources */,
+				91CDD6A21E4C1E46004373A1 /* RecordSoundsViewController.swift in Sources */,
+				91B6DE6B1E4D363F0047B1A2 /* PlaySoundsViewController.swift in Sources */,
 				91CDD6A01E4C1E46004373A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,10 +300,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		91CDD6A31E4C1E46004373A1 /* Main.storyboard */ = {
+		91B6DE671E4D328B0047B1A2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				91CDD6A41E4C1E46004373A1 /* Base */,
+				91B6DE681E4D328B0047B1A2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -505,6 +509,7 @@
 				91CDD6C61E4C1E46004373A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91CDD6C71E4C1E46004373A1 /* Build configuration list for PBXNativeTarget "Pitch-PerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				91CDD6C91E4C1E46004373A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91CDD6CA1E4C1E46004373A1 /* Build configuration list for PBXNativeTarget "Pitch-PerfectUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				91CDD6CC1E4C1E46004373A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
