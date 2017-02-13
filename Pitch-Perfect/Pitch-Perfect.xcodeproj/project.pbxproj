@@ -199,6 +199,7 @@
 				TargetAttributes = {
 					91CDD69B1E4C1E45004373A1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AQ26LQ3V58;
 						ProvisioningStyle = Automatic;
 					};
 					91CDD6AF1E4C1E46004373A1 = {
@@ -420,11 +421,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AQ26LQ3V58;
 				INFOPLIST_FILE = "Pitch-Perfect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jpatel.Pitch-Perfect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -432,11 +435,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AQ26LQ3V58;
 				INFOPLIST_FILE = "Pitch-Perfect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jpatel.Pitch-Perfect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

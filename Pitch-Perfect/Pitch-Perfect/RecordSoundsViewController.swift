@@ -27,12 +27,16 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-
+    //MARK: - configureRecordingButtons
+    func configureRecrodingButtons(isRecording: Bool){
+        recordLabel.text = isRecording ? "Recording in progress" : "Tap to record"
+        stopButton.isEnabled = isRecording ? true:false
+        recordingButton.isEnabled = isRecording ? false:true
+    }
+    
     // MARK: - recordAudio Action
     @IBAction func recordAudio(_ sender: Any) {
-        recordLabel.text = "Recording in Progress"
-        stopButton.isEnabled = true
-        recordingButton.isEnabled = false
+        configureRecrodingButtons(isRecording: true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let recodingName = "pitchPerfectRecord.wav"
@@ -50,9 +54,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     // MARK: - stopRecording Action
     @IBAction func stopRecording(_ sender: Any) {
-        recordLabel.text = "Tap to Record"
-        recordingButton.isEnabled = true
-        stopButton.isEnabled = false
+        configureRecrodingButtons(isRecording: false)
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
